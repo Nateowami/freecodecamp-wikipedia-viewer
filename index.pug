@@ -1,3 +1,18 @@
 doctype html
-title Hello
-p Hello
+html
+  head
+    title Hello
+    link(rel='stylesheet' href='style.css')
+  body
+    .wrapper
+      h1 Wikipedia viewer
+
+      form.search
+        input(type='text' placeholder='Search for a Wikipedia article' autofocus)
+        button.search-button(type='submit') Search
+        button.random Random
+
+
+      .free-code-camp Built as a <a href="https://www.freecodecamp.com/challenges/build-a-wikipedia-viewer">FreeCodeCamp project.</a>
+
+    script(src='script.js')

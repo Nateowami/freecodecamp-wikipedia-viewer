@@ -1,3 +1,69 @@
+$primary-color: #d44;
+
 body {
-  background-color: green;
+  font-family: Arial, sans-serif;;
+}
+
+h1 {
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1rem;
+
+  input, button {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: 1px solid $primary-color;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 3px 1px $primary-color;
+    }
+  }
+
+  input[type="text"] {
+    flex: 1;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .search-button {
+    border-radius: 0;
+    flex-grow: 0;
+  }
+}
+
+button {
+  border: 1px solid $primary-color;
+  color: red;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: white;
+    background-color: $primary-color;
+  }
+}
+
+.random {
+  flex-grow: 0;
+  display: inline-block;
+  padding: 0.75rem;
+  text-decoration: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.free-code-camp {
+  font-style: italic;
 }
